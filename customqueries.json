@@ -118,6 +118,14 @@
                     "query": "MATCH p=(m:User)-[r:AdminTo]->(n:Computer) RETURN p"
                 }
             ]
+        },{
+            "name": "Find all computer accounts that have local admin rights (SpoolSample+Relay)",
+            "queryList": [
+                {
+                    "final": true,
+                    "query": "MATCH p=(m:Computer)-[r:AdminTo]->(n:Computer) RETURN p"
+                }
+            ]
         },
         {
             "name": "Find all active Domain Admin sessions",
